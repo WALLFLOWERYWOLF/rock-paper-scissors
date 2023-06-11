@@ -15,48 +15,24 @@ function getComputerChoice() {
 }
 
 function playRound(playerChoice, computerChoice) {
-  let playerChoiceCaseInsensitive = playerChoice.toLowerCase();
-  if (playerChoiceCaseInsensitive === "rock" && computerChoice === "rock") {
+  playerChoice = playerChoice.toLowerCase();
+  if (playerChoice === "rock" && computerChoice === "rock") {
     return "Tie";
-  } else if (
-    playerChoiceCaseInsensitive === "rock" &&
-    computerChoice === "paper"
-  ) {
+  } else if (playerChoice === "rock" && computerChoice === "paper") {
     return "You Lose! Paper beats Rock.";
-  } else if (
-    playerChoiceCaseInsensitive === "rock" &&
-    computerChoice === "scissors"
-  ) {
+  } else if (playerChoice === "rock" && computerChoice === "scissors") {
     return "You Win! Rock beats Scissors.";
-  } else if (
-    playerChoiceCaseInsensitive === "paper" &&
-    computerChoice === "rock"
-  ) {
+  } else if (playerChoice === "paper" && computerChoice === "rock") {
     return "You Win! Paper beats Rock.";
-  } else if (
-    playerChoiceCaseInsensitive === "paper" &&
-    computerChoice === "paper"
-  ) {
+  } else if (playerChoice === "paper" && computerChoice === "paper") {
     return "Tie";
-  } else if (
-    playerChoiceCaseInsensitive === "paper" &&
-    computerChoice === "scissors"
-  ) {
+  } else if (playerChoice === "paper" && computerChoice === "scissors") {
     return "You Lose! Scissors beat Paper.";
-  } else if (
-    playerChoiceCaseInsensitive === "scissors" &&
-    computerChoice === "rock"
-  ) {
+  } else if (playerChoice === "scissors" && computerChoice === "rock") {
     return "You Lose! Rock beats Scissors.";
-  } else if (
-    playerChoiceCaseInsensitive === "scissors" &&
-    computerChoice === "paper"
-  ) {
+  } else if (playerChoice === "scissors" && computerChoice === "paper") {
     return "You Win! Scissors beat Paper.";
-  } else if (
-    playerChoiceCaseInsensitive === "scissors" &&
-    computerChoice === "scissors"
-  ) {
+  } else if (playerChoice === "scissors" && computerChoice === "scissors") {
     return "Tie";
   } else {
     return "Invalid choice! Please choose Rock, Paper or Scissors.";
