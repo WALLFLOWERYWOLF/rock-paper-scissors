@@ -63,7 +63,7 @@ function getComputerChoice() {
       return "paper";
       break;
     case 2:
-      return "paper";
+      return "scissors";
       break;
   }
 }
