@@ -20,11 +20,16 @@ buttons.forEach((button) => {
       case "You Win! Paper beats Rock.":
       case "You Win! Scissors beat Paper.":
         playerScore++;
+        roundResultAnnouncement.style.color = "green";
         break;
       case "You Lose! Paper beats Rock.":
       case "You Lose! Scissors beat Paper.":
       case "You Lose! Rock beats Scissors.":
         computerScore++;
+        roundResultAnnouncement.style.color = "red";
+        break;
+      case "Tie":
+        roundResultAnnouncement.style.color = "blue";
         break;
     }
 
